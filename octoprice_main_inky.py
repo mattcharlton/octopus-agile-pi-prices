@@ -293,7 +293,7 @@ else: #high res display
 
 	font = ImageFont.truetype(FredokaOne, 62)
 	message = "{0:.1f}".format(current_price) + "p"
-	w, h = font.getbbox(message)
+	_, _, w, h = font.getbbox(message)
 	#x = (inky_display.WIDTH / 2) - (w / 2)
 	#y = (inky_display.HEIGHT / 2) - (h / 2)
 	x = 0
@@ -309,7 +309,7 @@ else: #high res display
 	# NEXT
 	message = "2:" + "{0:.1f}".format(next_price) + "p"
 	font = ImageFont.truetype(FredokaOne, 23)
-	w2, h2 = font.getbbox(message)
+	_, _, w2, h2 = font.getbbox(message)
 	x = right_column
 	y = 0
 	if (next_price > 14.8):
@@ -320,7 +320,7 @@ else: #high res display
 	# NEXT
 	message = "3:" + "{0:.1f}".format(nextp1_price) + "p"
 	font = ImageFont.truetype(FredokaOne, 23)
-	w3, h3 = font.getbbox(message)
+	_, _, w3, h3 = font.getbbox(message)
 	x = right_column
 	y = 23
 
