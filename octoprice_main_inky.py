@@ -332,7 +332,7 @@ else: #high res display
 	# NEXT
 	message = "4:" + "{0:.1f}".format(nextp2_price) + "p"
 	font = ImageFont.truetype(FredokaOne, 23)
-    _, _, w3, h3 = font.getbbox(message)
+	_, _, w3, h3 = font.getbbox(message)
 	x = right_column
 	y = 46
 
