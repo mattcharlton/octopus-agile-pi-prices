@@ -45,23 +45,19 @@ Once you have an ssh terminal, you can get started with setting up our project
 
 # Installing
 
+- Install git:
+```
+sudo apt install git
+  ```
+
 - Install the libraries for inky phat using the [script from pimoroni](https://learn.pimoroni.com/tutorial/sandyj/getting-started-with-inky-phat)
 
 Updated 2025 - this now sets up the venv you need for python3 along with some other bits.
-
+```
   git clone https://github.com/pimoroni/inky
   cd inky
   ./install.sh
-
-  ```
-- Install git:
-
-  ```
-
-
-  ```
-  sudo apt install git
-  ```
+```
 
 - Clone our project
 
