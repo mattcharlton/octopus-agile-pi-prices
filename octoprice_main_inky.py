@@ -69,7 +69,7 @@ def draw_next_price(index, size, x_offset):
 	# NEXT
 	message = "{0}:{1:.1f}p".format(index + 2, prices[index+1]['price'])
 	font = ImageFont.truetype(FredokaOne, size)
-	w2, h2 = font.getsize(message)
+	_, _, w2, h2 = font.getbbox(message)
 	x = x_offset
 	y = size * index
 	colour = colour_for_price(prices[index + 1]['price'])
@@ -92,7 +92,7 @@ def draw_all(current_font_size, current_y_offset, right_column_offset, right_col
 	# Current price
 	font = ImageFont.truetype(FredokaOne, current_font_size)
 	message = "{0:.1f}".format(prices[0]['price']) + "p"
-	w, h = font.getsize(message)
+	_, _, w, h = font.getbbox(message)
 	#x = (inky_display.WIDTH / 2) - (w / 2)
 	#y = (inky_display.HEIGHT / 2) - (h / 2)
 	x = 0
